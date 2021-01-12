@@ -49,7 +49,6 @@ var pradius = 3.0;
 var fovy = 45.0 * Math.PI/180.0;
 var aspect;
 
-/* dx, dy, dz: the position of object */
 var dx = 0;
 var dy = 0;
 var dz = 0;
@@ -64,12 +63,10 @@ var dxz = 0;
 var dyz = 0;
 var dzz = 0;
 
-// scale
 var sx = 1;
 var sy = 1;
 var sz = 1;
 
-/* cx, cy, cz: the position of camera */
 var cx = 0.0;
 var cy = 1.0;
 var cz = 0.0;
@@ -90,13 +87,12 @@ var lastMouseY = null;
 
 var currentKey = [];
 
-/* variables for interface control */
-var projectionType = 1; // default is Orthographic(1), Perspective(2)
-var drawType = 1; // default is WireFrame(1), Solid(2)
-var viewType = [0]; // default is orthographic frontview(1), leftView(2), topView(3), isoview(4)
-var viewcnt = 0; // view count default = 0, in orthographic or perspective mode
+var projectionType = 1; 
+var drawType = 1; 
+var viewType = [0]; 
+var viewcnt = 0; 
 
-var changePos = 1; // default is Object(1), camera(2)
+var changePos = 1;
 
 var currentColor = vec4.create();
 
